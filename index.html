@@ -1,0 +1,234 @@
+<!-- Full HTML Content with Certifications Displayed -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashank Tiwari | BCA (AI & DS) Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: linear-gradient(90deg, #1e3a8a, #2563eb);
+      color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #f1f5f9;
+      font-weight: 600;
+    }
+    nav a:hover { color: #93c5fd; }
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 2rem;
+      background: white;
+    }
+    .hero-text { max-width: 600px; }
+    .hero-text h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-text p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: #475569;
+    }
+    .buttons a {
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 1rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+    }
+    .btn-primary {
+      background-color: #2563eb;
+      color: white;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    }
+    .btn-primary:hover {
+      background-color: #1e40af;
+    }
+    .btn-outline {
+      border: 2px solid #2563eb;
+      color: #2563eb;
+    }
+    .btn-outline:hover {
+      background-color: #2563eb;
+      color: white;
+    }
+    .hero-img img {
+      max-width: 300px;
+      border-radius: 50%;
+      border: 5px solid #2563eb;
+      transition: transform 0.3s ease;
+    }
+    .hero-img img:hover {
+      transform: scale(1.05);
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #2563eb;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #2563eb;
+      display: inline-block;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    .cert-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .cert-item {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      padding: 1rem;
+      transition: box-shadow 0.3s ease;
+    }
+    .cert-item:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+    .cert-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .cert-item a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    ul { padding-left: 1.5rem; }
+    ul li { margin-bottom: 0.75rem; color: #334155; }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f1f5f9;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      header { flex-direction: column; text-align: center; }
+      .hero-img { margin-top: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><strong>Shashank</strong></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="hero-text">
+      <h1>Hello! I’m Shashank Tiwari</h1>
+      <p>BCA (AI & DS) student at KR Mangalam University. Passionate about Artificial Intelligence, Web Development and solving real-world problems through technology.</p>
+      <div class="buttons">
+        <a href="#contact" class="btn-primary">Hire Me</a>
+        <a href="resume.pdf" class="btn-outline" download>Download Resume</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://via.placeholder.com/300x300.png?text=Your+Photo" alt="Shashank Tiwari Photo" />
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I am a dedicated and enthusiastic student pursuing a Bachelor of Computer Applications with a specialization in Artificial Intelligence & Data Science at KR Mangalam University. With a passion for leveraging technology to solve real-world challenges, I am consistently exploring opportunities to enhance my technical and analytical skills.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <ul>
+        <li>Programming: Python, JavaScript</li>
+        <li>Data Science: Pandas, NumPy, Matplotlib</li>
+        <li>Machine Learning & AI: Scikit-learn, TensorFlow (Basics)</li>
+        <li>Web Development: HTML, CSS, JavaScript, Flask</li>
+        <li>Databases: MySQL, MongoDB</li>
+        <li>Version Control: Git & GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="card cert-gallery">
+      <div class="cert-item">
+        <img src="https://via.placeholder.com/200x140.png?text=PDF" alt="IBM Big Data Engineer" />
+        <p><strong>IBM Big Data Engineer</strong></p>
+        <a href="https://courses.ibmcep.cognitiveclass.ai/certificates/55c0a38b36734347b091222b98104b3a" target="_blank">View Certificate</a>
+      </div>
+      <div class="cert-item">
+        <img src="https://via.placeholder.com/200x140.png?text=PDF" alt="IBM Data Analysis with Python" />
+        <p><strong>IBM: Data Analysis with Python</strong></p>
+        <a href="https://courses.cognitiveclass.ai/certificates/5c75085113064e1ebcc426be0268ba3b" target="_blank">View Certificate</a>
+      </div>
+      <div class="cert-item">
+        <img src="https://via.placeholder.com/200x140.png?text=PDF" alt="Foundation to AI & DS" />
+        <p><strong>Foundation to AI & DS</strong></p>
+        <a href="https://www.netcredential.com/verify/roy8Hkno1u" target="_blank">Verify Certificate</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+  <h2>Contact Me</h2>
+  <div class="card" style="background: #f0f9ff; border: 2px solid #cbd5e1; text-align: center;">
+    <p style="margin-bottom: 1rem; font-size: 1.1rem;">Let's connect through the platforms below:</p>
+    <ul style="list-style: none; padding: 0; font-size: 1rem;">
+      <li style="margin-bottom: 1rem;"><strong>Email:</strong> <a href="mailto:shashank@example.com" style="color: #2563eb; text-decoration: none;">shashank@example.com</a></li>
+      <li style="margin-bottom: 1rem;"><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/shashanktiwari" target="_blank" style="color: #2563eb; text-decoration: none;">linkedin.com/in/shashanktiwari</a></li>
+      <li style="margin-bottom: 1rem;"><strong>GitHub:</strong> <a href="https://github.com/shashanktiwari" target="_blank" style="color: #2563eb; text-decoration: none;">github.com/shashanktiwari</a></li>
+      <li><strong>LeetCode:</strong> <a href="https://leetcode.com/shashanktiwari" target="_blank" style="color: #2563eb; text-decoration: none;">leetcode.com/shashanktiwari</a></li>
+    </ul>
+  </div>
+</section>
+  <!-- Footer remains unchanged -->
+</body>
+</html>
