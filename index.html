@@ -19,17 +19,16 @@
       justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
-      background: linear-gradient(90deg, #1e3a8a, #2563eb);
-      color: white;
+      background: white;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
     nav a {
       margin-left: 1.5rem;
       text-decoration: none;
-      color: #f1f5f9;
+      color: #1e293b;
       font-weight: 600;
     }
-    nav a:hover { color: #93c5fd; }
+    nav a:hover { color: #2563eb; }
     header {
       display: flex;
       flex-direction: row;
@@ -40,15 +39,12 @@
     }
     .hero-text { max-width: 600px; }
     .hero-text h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      background: linear-gradient(to right, #1e3a8a, #2563eb);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
     .hero-text p {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       margin-bottom: 2rem;
       color: #475569;
     }
@@ -57,34 +53,15 @@
       display: inline-block;
       margin-right: 1rem;
       padding: 0.75rem 1.5rem;
-      border-radius: 30px;
+      border-radius: 6px;
       font-weight: 600;
-      transition: all 0.3s ease-in-out;
     }
-    .btn-primary {
-      background-color: #2563eb;
-      color: white;
-      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-    }
-    .btn-primary:hover {
-      background-color: #1e40af;
-    }
-    .btn-outline {
-      border: 2px solid #2563eb;
-      color: #2563eb;
-    }
-    .btn-outline:hover {
-      background-color: #2563eb;
-      color: white;
-    }
+    .btn-primary { background-color: #2563eb; color: white; }
+    .btn-outline { border: 2px solid #2563eb; color: #2563eb; }
     .hero-img img {
       max-width: 300px;
       border-radius: 50%;
       border: 5px solid #2563eb;
-      transition: transform 0.3s ease;
-    }
-    .hero-img img:hover {
-      transform: scale(1.05);
     }
     section {
       padding: 4rem 2rem;
@@ -103,7 +80,7 @@
       border-radius: 12px;
       padding: 2rem;
       margin-bottom: 2rem;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     }
     .cert-gallery {
       display: grid;
@@ -113,19 +90,16 @@
     .cert-item {
       background: #fff;
       border: 1px solid #e2e8f0;
-      border-radius: 12px;
+      border-radius: 8px;
       overflow: hidden;
       text-align: center;
       padding: 1rem;
-      transition: box-shadow 0.3s ease;
-    }
-    .cert-item:hover {
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
     .cert-item img {
       max-width: 100%;
       height: auto;
-      border-radius: 8px;
+      border-radius: 4px;
       margin-bottom: 1rem;
     }
     .cert-item a {
@@ -163,11 +137,11 @@
 
   <header>
     <div class="hero-text">
-      <h1>Hello! I’m Shashank Tiwari</h1>
+      <h1>Hello! I’m <span style="color:#2563eb">Shashank Tiwari</span></h1>
       <p>BCA (AI & DS) student at KR Mangalam University. Passionate about Artificial Intelligence, Web Development and solving real-world problems through technology.</p>
       <div class="buttons">
         <a href="#contact" class="btn-primary">Hire Me</a>
-        <a href="Resume.pdf" class="btn-outline" download>Download Resume</a>
+        <a href="resume.pdf" class="btn-outline" download>Download Resume</a>
       </div>
     </div>
     <div class="hero-img">
@@ -217,18 +191,8 @@
     </div>
   </section>
 
-  <section id="contact">
-  <h2>Contact Me</h2>
-  <div class="card" style="background: #f0f9ff; border: 2px solid #cbd5e1; text-align: center;">
-    <p style="margin-bottom: 1rem; font-size: 1.1rem;">Let's connect through the platforms below:</p>
-    <ul style="list-style: none; padding: 0; font-size: 1rem;">
-      <li style="margin-bottom: 1rem;"><strong>Email:</strong> <a href="mailto:shashank@example.com" style="color: #2563eb; text-decoration: none;">shashank@example.com</a></li>
-      <li style="margin-bottom: 1rem;"><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/shashanktiwari" target="_blank" style="color: #2563eb; text-decoration: none;">linkedin.com/in/shashanktiwari</a></li>
-      <li style="margin-bottom: 1rem;"><strong>GitHub:</strong> <a href="https://github.com/shashanktiwari" target="_blank" style="color: #2563eb; text-decoration: none;">github.com/shashanktiwari</a></li>
-      <li><strong>LeetCode:</strong> <a href="https://leetcode.com/shashanktiwari" target="_blank" style="color: #2563eb; text-decoration: none;">leetcode.com/shashanktiwari</a></li>
-    </ul>
-  </div>
-</section>
-  <!-- Footer remains unchanged -->
+  <footer id="contact">
+    <p>&copy; 2025 Shashank Tiwari | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
